@@ -1,5 +1,4 @@
 import { sequence } from '@sveltejs/kit/hooks';
-import { handleErrorWithSentry, sentryHandle } from '@sentry/sveltekit';
 import * as Sentry from '@sentry/sveltekit';
 import { isCloud, isProd } from '$lib/system';
 
@@ -9,6 +8,6 @@ Sentry.init({
     tracesSampleRate: 1.0
 });
 
-export const handle = sequence(sentryHandle());
+export const handle = sequence(Sentry.sentryHandle());
 
-export const handleError = handleErrorWithSentry();
+export const handleError = Sentry.handleErrorWithSentry();

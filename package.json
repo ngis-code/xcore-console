@@ -28,7 +28,7 @@
         "@appwrite.io/pink-legacy": "^1.0.3",
         "@appwrite.io/pink-svelte": "https://pkg.pr.new/appwrite/pink/@appwrite.io/pink-svelte@973fff2",
         "@popperjs/core": "^2.11.8",
-        "@sentry/sveltekit": "^8.38.0",
+        "@sentry/sveltekit": "^9.30.0",
         "@stripe/stripe-js": "^3.5.0",
         "ai": "^2.2.37",
         "analytics": "^0.8.16",
@@ -44,7 +44,8 @@
         "prismjs": "^1.30.0",
         "remarkable": "^2.0.1",
         "svelte-confetti": "^1.4.0",
-        "tippy.js": "^6.3.7"
+        "tippy.js": "^6.3.7",
+        "zod": "^3.25.67"
     },
     "devDependencies": {
         "@eslint/compat": "^1.2.7",
